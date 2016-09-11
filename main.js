@@ -18,7 +18,8 @@ var sticker = (function(){
 		desktop.addEventListener('mousedown', mousedown, false);
 		document.addEventListener('mousemove', mousemove, false);
 		desktop.addEventListener('mouseup', mouseup, false);
-		desktop.addEventListener('click', deleteSticker, false);		
+		desktop.addEventListener('click', deleteSticker, false);
+		getData();		
 	}
 
 	function createSticker(){
@@ -85,7 +86,7 @@ var sticker = (function(){
 	}
 	
 	function insertData(data){
-		for(var i=0; i<data.length(); ++i){
+		for(var i=0; i<data.length; ++i){
 			var temp_sticker = createSticker();
 			
 			temp_sticker.children[0].value = data[i].value;
