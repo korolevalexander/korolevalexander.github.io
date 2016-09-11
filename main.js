@@ -90,9 +90,9 @@ var sticker = (function(){
 			var temp_sticker = createSticker();
 			
 			temp_sticker.children[1].value = data[i].value;
-			desktop.appendChild(temp_sticker);
 			temp_sticker.style.left = data[i].left;
     			temp_sticker.style.top = data[i].top;
+			desktop.appendChild(temp_sticker);
 		}
 	}
 
