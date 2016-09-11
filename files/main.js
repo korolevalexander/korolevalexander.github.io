@@ -74,7 +74,7 @@ var sticker = (function(){
 	function getData(){
 		var xhr = new XMLHttpRequest();
 
-		xhr.open("GET", "files/stickers.json", true);
+		xhr.open("GET", "stickers.json", true);
 		xhr.responseType = "json";
 		xhr.onload = function(data){
 			if(xhr.readyState == 4){
