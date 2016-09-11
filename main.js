@@ -77,11 +77,11 @@ var sticker = (function(){
 	function getData(){
 		var xhr = new XMLHttpRequest();
 
-		xhr.open("GET", "https://pp.vk.me/c7008/v7008579/5aadc/gOZkJhRForM.jpg", true);
-		//xhr.responseType = "json";
+		xhr.open("GET", "stickers.json", true);
+		xhr.responseType = "json";
 		xhr.onload = function(data){
 			if(xhr.readyState == 4){
-				console.log(xhr.response);
+				insertData(xhr.response);
 			}
 		}
 		xhr.send(null);
