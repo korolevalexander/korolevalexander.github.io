@@ -31,7 +31,7 @@ var sticker = (function(){
 		};
 		temp_sticker.style.left = '0px';
     		temp_sticker.style.top = '0px';		
-
+		temp_sticker.style.zIndex = zIndexCount++;
 		return temp_sticker;
 	}
 
