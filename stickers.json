@@ -1,12 +1,12 @@
 [
 	{
 		"value": "text1",
-		"left": 200,
-		"top": 250
+		"left": "200px",
+		"top": "250px"
 	},
 	{
 		"value": "text2",
-		"left": 40,
-		"top": 320
+		"left": "40px",
+		"top": "320px"
 	}
 ]
