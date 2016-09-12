@@ -77,7 +77,7 @@ var sticker = (function(){
 	function getData(){
 		var xhr = new XMLHttpRequest();
 
-		xhr.open("GET", "https://github.com/KorolyovAlexander/Sticker-board/blob/master/stickers.json", true);
+		xhr.open("GET", "stickers.json", true);
 		xhr.responseType = "json";
 		xhr.onload = function(data){
 			if(xhr.readyState == 4){
